@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+import requests,random,re
+from flask import Flask ,render_template,request
 
 app = Flask(__name__)
 
