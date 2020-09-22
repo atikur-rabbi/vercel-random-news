@@ -3,12 +3,7 @@ from flask import Flask ,render_template,request
 
 app = Flask(__name__)
 
-
-@app.route('/')
-def hello():
-    return 'Hello, world'
-
-@app.route("/a",methods=['GET', 'POST'])
+@app.route("/",methods=['GET', 'POST'])
 def home():
 	import requests,random,re
 	main_list={"all":"https://api.atik.cf/inshorts/all",
